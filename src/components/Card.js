@@ -41,6 +41,7 @@ const Card = ({ name, dob, bloodGroup, id, contacts }) => {
 							<Contacts key={i}
 								name={contacts[i].name} 
 								number={contacts[i].number}
+								relation={contacts[i].relation}
 							/>
 						);
 					})

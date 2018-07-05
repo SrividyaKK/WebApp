@@ -7,11 +7,13 @@ const users = [
     contacts: [
     {
       name: 'Mom', 
-      number: '+917797468957'
+      number: '+917797468957', 
+      relation: 'Mother'
     }, 
     {
       name: 'Dad', 
-      number: '+918746956810'
+      number: '+918746956810', 
+      relation: 'Father'
     }
     ]
   },
@@ -23,11 +25,13 @@ const users = [
     contacts: [
     {
       name: 'Mom', 
-      number: '+917797468957'
+      number: '+917797468957', 
+      relation: 'Mother'
     }, 
     {
       name: 'Dad', 
-      number: '+918746956810'
+      number: '+918746956810', 
+      relation: 'Father'
     }
     ]
   },
@@ -39,11 +43,13 @@ const users = [
     contacts: [
     {
       name: 'Mom', 
-      number: '+917797468957'
+      number: '+917797468957', 
+      relation: 'Mother'
     }, 
     {
       name: 'Dad', 
-      number: '+918746956810'
+      number: '+918746956810', 
+      relation: 'Father'
     }
     ]
   },
@@ -55,11 +61,13 @@ const users = [
     contacts: [
     {
       name: 'Mom', 
-      number: '+917797468957'
+      number: '+917797468957', 
+      relation: 'Mother'
     }, 
     {
       name: 'Dad', 
-      number: '+918746956810'
+      number: '+918746956810', 
+      relation: 'Father'
     }
     ]
   },
@@ -71,11 +79,13 @@ const users = [
     contacts: [
     {
       name: 'Mom', 
-      number: '+917797468957'
+      number: '+917797468957', 
+      relation: 'Mother'
     }, 
     {
       name: 'Dad', 
-      number: '+918746956810'
+      number: '+918746956810', 
+      relation: 'Father'
     }
     ]
   }
