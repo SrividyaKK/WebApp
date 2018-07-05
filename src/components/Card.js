@@ -1,7 +1,8 @@
 import React from 'react';
+import Contacts from './Contacts';
 //const mapsapi = require( 'google-maps-api' )( 'AIzaSyBI-f0FOJkTgdaurY2Zy41GimJIFHRukGc' );
 
-const Card = ({ name, dob, bloodGroup, id }) => {
+const Card = ({ name, dob, bloodGroup, id, contacts }) => {
 	const year = Number(dob.substr(4, 4));
 	const month = Number(dob.substr(2, 2)) - 1;
 	const day = Number(dob.substr(0, 2));
@@ -26,12 +27,24 @@ const Card = ({ name, dob, bloodGroup, id }) => {
 			<img src={`https://robohash.org/${id}?size=200x200`} alt='photo' />
 			<div>
 				<p className='f4'><b>Name: </b>{name}</p>
-				<p className='f5'><b>DOB: </b>{day}.{month+1}.{year} (Age: {age})</p>
-				<p className='f5'><b>Blood Group: </b>{bloodGroup}</p>
+				<p className='f5 tl'><b>DOB: </b>{day}.{month+1}.{year} (Age: {age})</p>
+				<p className='f5 tl'><b>Blood Group: </b>{bloodGroup}</p>
 				{/*<div id="map"></div>
 					<script async defer
 				    	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBI-f0FOJkTgdaurY2Zy41GimJIFHRukGc&callback=initMap">
 				    </script>*/}
+				<p className='f5 tl'></p>
+				<p className='f5 tl'><b>Emergency Contacts: </b></p>
+				{
+					contacts.map((contact, i) => {
+						return (
+							<Contacts key={i}
+								name={contacts[i].name} 
+								number={contacts[i].number}
+							/>
+						);
+					})
+				}
 			</div>
 		</div>
 	);
