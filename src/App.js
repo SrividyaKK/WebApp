@@ -4,7 +4,7 @@ import Navigation from './components/Navigation/Navigation';
 import SignIn from './components/SignIn/SignIn';
 import SignUp from './components/SignUp/SignUp';
 import Logo from './components/Logo/Logo';
-import CardList from './components/CardList';
+import CardList from './components/CardList/CardList';
 import users from './components/users.js';
 
 class App extends Component {

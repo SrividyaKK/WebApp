@@ -1,5 +1,5 @@
-import React from 'react';
-import Contacts from './Contacts';
+ import React from 'react';
+import Contacts from '../Contacts';
 //const mapsapi = require( 'google-maps-api' )( 'AIzaSyBI-f0FOJkTgdaurY2Zy41GimJIFHRukGc' );
 
 const Card = ({ name, dob, bloodGroup, id, contacts }) => {
@@ -23,8 +23,8 @@ const Card = ({ name, dob, bloodGroup, id, contacts }) => {
 	// }
 
 	return (
-		<div className = 'tc bg-light-green dib br3 pa3 ma2 grow bw2 shadow-5 '>
-			<img src={`https://robohash.org/${id}?size=200x200`} alt='photo' />
+		<div className = 'tc bg-light-green dib br3 pa3 ma2 grow bw2 shadow-5 h-25'>
+			<img src={`https://robohash.org/${id}?size=200x200`} alt='profile photo' />
 			<div>
 				<p className='f4'><b>Name: </b>{name}</p>
 				<p className='f5 tl'><b>DOB: </b>{day}.{month+1}.{year} (Age: {age})</p>
