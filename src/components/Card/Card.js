@@ -24,7 +24,7 @@ const Card = ({ name, dob, bloodGroup, id, contacts, lat, lng }) => {
 				<p className='f5 tl'></p>
 				{/*<SimpleMap />*/}
 				<MapWithAMarker
-  					googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyBI-f0FOJkTgdaurY2Zy41GimJIFHRukGc&v=3.exp&libraries=geometry,drawing,places"
+  					googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBgA7QvYJPhmHlWV5mMskI28-3S_T0VVo&v=3.exp&libraries=geometry,drawing,places"
   					loadingElement={<div style={{ height: `100%` }} />}
   					containerElement={<div style={{ height: `400px` }} />}
   					mapElement={<div style={{ height: `100%` }} />}
