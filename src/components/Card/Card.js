@@ -28,8 +28,8 @@ const Card = ({ name, dob, bloodGroup, id, contacts, lat, lng }) => {
   					loadingElement={<div style={{ height: `100%` }} />}
   					containerElement={<div style={{ height: `400px` }} />}
   					mapElement={<div style={{ height: `100%` }} />}
-  					lat={lat}
-  					lng={lng}
+  					latitude={lat}
+  					longitude={lng}
 				/>
 
 				<p className='f5 tl'><b>Emergency Contacts: </b></p>
