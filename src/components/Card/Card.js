@@ -1,7 +1,9 @@
 import React from 'react';
 import Contacts from '../Contacts';
 import './Card.css'
-//const mapsapi = require( 'google-maps-api' )( 'AIzaSyBI-f0FOJkTgdaurY2Zy41GimJIFHRukGc' );
+import SimpleMap from '../Map';
+// import GoogleMapLoader from '../Map/Map';
+// import MapContainer from '../Maps/Maps';
 
 const Card = ({ name, dob, bloodGroup, id, contacts }) => {
 	const year = Number(dob.substr(4, 4));
@@ -13,18 +15,8 @@ const Card = ({ name, dob, bloodGroup, id, contacts }) => {
 		age--;
 	}
 
-	// const initMap = () => {
-	// 	// The location of Uluru
-	// 	var uluru = {lat: -25.344, lng: 131.036};
-	// 	// The map, centered at Uluru
-	// 	var map = new google.maps.Map(
-	// 	    document.getElementById('map'), {zoom: 4, center: uluru});
-	// 	// The marker, positioned at Uluru
-	// 	var marker = new google.maps.Marker({position: uluru, map: map});
-	// }
-
 	return (
-		<div className = 'tc bg-light-green dib br3 pa3 ma2 bw2 shadow-5 h-25'>
+		<div className = 'tc bg-light-green dib br3 pa3 ma2 bw2 shadow-5 h-25 w-40'>
 			<img src={`https://robohash.org/${id}?size=200x200`} alt='profile photo' />
 			<div>
 				<p className='f4'><b>Name: </b>{name}</p>
@@ -35,6 +27,8 @@ const Card = ({ name, dob, bloodGroup, id, contacts }) => {
 				    	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBI-f0FOJkTgdaurY2Zy41GimJIFHRukGc&callback=initMap">
 				    </script>*/}
 				<p className='f5 tl'></p>
+				<SimpleMap />
+				{/*<MapContainer />*/}
 				<p className='f5 tl'><b>Emergency Contacts: </b></p>
 				{
 					contacts.map((contact, i) => {
