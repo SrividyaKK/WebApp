@@ -7,7 +7,7 @@ import {
 } from "react-google-maps";
 
 const MapWithAMarker = withScriptjs(withGoogleMap(props =>
-    //const {latitude, longitude} = props;
+    // const {latitude, longitude} = props;
     <GoogleMap
         defaultZoom={16}
         defaultCenter={{ lat: 10.028116, lng: 76.329238 }}
