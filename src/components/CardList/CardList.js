@@ -14,7 +14,8 @@ const CardList = ({ users }) => {
 							name={users[i].name} 
 							dob={users[i].dob}
 							bloodGroup={users[i].bloodGroup}
-							//location
+							lat={users[i].location.lat}
+							lng={users[i].location.lng}
 							// photo={'http://i0.wp.com/www.coldashpreschool.org.uk/wp-content/uploads/2017/01/Blank-Profile-Pic.jpg'}
 							contacts={users[i].contacts}
 						/>

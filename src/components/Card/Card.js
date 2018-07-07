@@ -4,7 +4,7 @@ import './Card.css'
 // import SimpleMap from '../SimpleMap';
 import MapWithAMarker from '../Map/Map';
 
-const Card = ({ name, dob, bloodGroup, id, contacts }) => {
+const Card = ({ name, dob, bloodGroup, id, contacts, lat, lng }) => {
 	const year = Number(dob.substr(4, 4));
 	const month = Number(dob.substr(2, 2)) - 1;
 	const day = Number(dob.substr(0, 2));
@@ -28,6 +28,8 @@ const Card = ({ name, dob, bloodGroup, id, contacts }) => {
   					loadingElement={<div style={{ height: `100%` }} />}
   					containerElement={<div style={{ height: `400px` }} />}
   					mapElement={<div style={{ height: `100%` }} />}
+  					lat={lat}
+  					lng={lng}
 				/>
 
 				<p className='f5 tl'><b>Emergency Contacts: </b></p>

@@ -1,94 +1,92 @@
 const users = [
-  {
-    id: 1,
-    name: 'Leanne Graham',
-    dob: '01011992',
-    bloodGroup: 'A+', 
-    contacts: [
     {
-      name: 'Mom', 
-      number: '+917797468957', 
-      relation: 'Mother'
-    }, 
+        id: 1,
+        name: 'Leanne Graham',
+        dob: '01011992',
+        bloodGroup: 'A+', 
+        contacts: [
+            {
+                name: 'Mom', 
+                number: '+917797468957', 
+                relation: 'Mother'
+            }, 
+            {
+                name: 'Dad', 
+                number: '+918746956810', 
+                relation: 'Father'
+            }
+        ], 
+        location: {
+            lat: 9.943822, 
+            lng: 76.298638
+        }
+    },
     {
-      name: 'Dad', 
-      number: '+918746956810', 
-      relation: 'Father'
+        id: 2,
+        name: 'Ervin Howell',
+        dob: '09051995',
+        bloodGroup: 'O+', 
+        contacts: [
+            {
+                name: 'Mom', 
+                number: '+917797468957', 
+                relation: 'Mother'
+            }, 
+            {
+                name: 'Dad', 
+                number: '+918746956810', 
+                relation: 'Father'
+            }
+        ], 
+        location: {
+            lat: 9.958291, 
+            lng: 76.338276
+        }
+    },
+    {
+        id: 3,
+        name: 'Clementine Bauch',
+        dob: '13101985',
+        bloodGroup: 'B-', 
+        contacts: [
+            {
+                name: 'Mom', 
+                number: '+917797468957', 
+                relation: 'Mother'
+            }, 
+            {
+            name: 'Dad', 
+            number: '+918746956810', 
+            relation: 'Father'
+            }
+        ], 
+        location: {
+            lat: 9.866349, 
+            lng: 76.305384
+        }
+    },
+    {
+        id: 4,
+        name: 'Patricia Lebsack',
+        dob: '16071968',
+        bloodGroup: 'AB-', 
+        contacts: [
+            {
+                name: 'Mom', 
+                number: '+917797468957', 
+                relation: 'Mother'
+            }, 
+            {
+                name: 'Dad', 
+                number: '+918746956810', 
+                relation: 'Father'
+            }
+        ], 
+        location: {
+            lat: 10.028116, 
+            lng: 76.329238
+        }
     }
-    ]
-  },
-  {
-    id: 2,
-    name: 'Ervin Howell',
-    dob: '09051995',
-    bloodGroup: 'O+', 
-    contacts: [
-    {
-      name: 'Mom', 
-      number: '+917797468957', 
-      relation: 'Mother'
-    }, 
-    {
-      name: 'Dad', 
-      number: '+918746956810', 
-      relation: 'Father'
-    }
-    ]
-  },
-  {
-    id: 3,
-    name: 'Clementine Bauch',
-    dob: '13101985',
-    bloodGroup: 'B-', 
-    contacts: [
-    {
-      name: 'Mom', 
-      number: '+917797468957', 
-      relation: 'Mother'
-    }, 
-    {
-      name: 'Dad', 
-      number: '+918746956810', 
-      relation: 'Father'
-    }
-    ]
-  },
-  {
-    id: 4,
-    name: 'Patricia Lebsack',
-    dob: '16071968',
-    bloodGroup: 'AB-', 
-    contacts: [
-    {
-      name: 'Mom', 
-      number: '+917797468957', 
-      relation: 'Mother'
-    }, 
-    {
-      name: 'Dad', 
-      number: '+918746956810', 
-      relation: 'Father'
-    }
-    ]
-  },
-  {
-    id: 5,
-    name: 'Chelsey Dietrich',
-    dob: '31081987',
-    bloodGroup: 'AB+', 
-    contacts: [
-    {
-      name: 'Mom', 
-      number: '+917797468957', 
-      relation: 'Mother'
-    }, 
-    {
-      name: 'Dad', 
-      number: '+918746956810', 
-      relation: 'Father'
-    }
-    ]
-  }
 ];
 
 export default users;
