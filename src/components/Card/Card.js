@@ -1,9 +1,8 @@
 import React from 'react';
 import Contacts from '../Contacts';
 import './Card.css'
-import SimpleMap from '../Map';
-// import GoogleMapLoader from '../Map/Map';
-// import MapContainer from '../Maps/Maps';
+// import SimpleMap from '../SimpleMap';
+import MapWithAMarker from '../Map/Map';
 
 const Card = ({ name, dob, bloodGroup, id, contacts }) => {
 	const year = Number(dob.substr(4, 4));
@@ -22,13 +21,15 @@ const Card = ({ name, dob, bloodGroup, id, contacts }) => {
 				<p className='f4'><b>Name: </b>{name}</p>
 				<p className='f5 tl'><b>DOB: </b>{day}.{month+1}.{year} (Age: {age})</p>
 				<p className='f5 tl'><b>Blood Group: </b>{bloodGroup}</p>
-				{/*<div id="map"></div>
-					<script async defer
-				    	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBI-f0FOJkTgdaurY2Zy41GimJIFHRukGc&callback=initMap">
-				    </script>*/}
 				<p className='f5 tl'></p>
-				<SimpleMap />
-				{/*<MapContainer />*/}
+				{/*<SimpleMap />*/}
+				<MapWithAMarker
+  					googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyBI-f0FOJkTgdaurY2Zy41GimJIFHRukGc&v=3.exp&libraries=geometry,drawing,places"
+  					loadingElement={<div style={{ height: `100%` }} />}
+  					containerElement={<div style={{ height: `400px` }} />}
+  					mapElement={<div style={{ height: `100%` }} />}
+				/>
+
 				<p className='f5 tl'><b>Emergency Contacts: </b></p>
 				{
 					contacts.map((contact, i) => {
