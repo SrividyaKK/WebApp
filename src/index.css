@@ -2,9 +2,10 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Calibri';
-  background: linear-gradient(89deg, #FF5EDF 0%, #04C8DE 100%);
+  /*background: linear-gradient(89deg, #FF5EDF 0%, #04C8DE 100%);*/
   background: linear-gradient(to right, rgb(178, 182, 253), rgb(158, 214, 133));
-  background: linear-gradient(to left, rgba(7,27,82,1) 0%, rgba(0,128,128,1) 100%);
+  background: linear-gradient(to right, rgb(97, 72, 183), rgb(24, 229, 7));
+  /*background: linear-gradient(to right, rgb(0, 0, 0), rgb(64, 0, 128));*/
   @import url('https://fonts.googleapis.com/css?family=Carrois+Gothic');
   font-family: 'Carrois Gothic', sans-serif;
 }
