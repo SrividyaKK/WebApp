@@ -31,8 +31,8 @@ const Card = ({ name, dob, bloodGroup, id, contacts, lat, lng }) => {
   					loadingElement={<div style={{ height: `100%` }} />}
   					containerElement={<div style={{ height: `400px` }} />}
   					mapElement={<div style={{ height: `100%` }} />}
-  					latitude={lat}
-  					longitude={lng}
+  					lat={lat}
+  					lng={lng}
 				/>
 
 				<div className='card-body'>
