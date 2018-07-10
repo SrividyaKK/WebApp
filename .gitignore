@@ -19,3 +19,6 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+/material-dashboard-react-v1.3.0
+/material-kit-react-v1.1.0
