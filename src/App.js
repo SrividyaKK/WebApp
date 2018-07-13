@@ -6,6 +6,22 @@ import SignUp from './components/SignUp/SignUp';
 import Logo from './components/Logo/Logo';
 import CardList from './components/CardList/CardList';
 import users from './components/users.js';
+import Particles from 'react-particles-js';
+
+const particlesOptions = {
+    particles: {
+        number: {
+            value: 60, 
+            density: {
+                enable: true, 
+                value_area: 800
+            }
+        }, 
+        color: {
+            value: '#FF00FF'
+        }
+    }
+}
 
 class App extends Component {
     constructor() {
@@ -32,6 +48,10 @@ class App extends Component {
         const { isSignedIn, route, users } = this.state;
         return (
           <div className="App">
+            <Particles className='particles'
+                params={particlesOptions}
+                style={{width: '100%'}}
+            />
             <Navigation isSignedIn={isSignedIn} onRouteChange={this.onRouteChange} />
             { route === 'home' 
                 ? <div>
