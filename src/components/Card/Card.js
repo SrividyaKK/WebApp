@@ -15,9 +15,9 @@ const Card = ({ name, dob, bloodGroup, id, contacts, lat, lng }) => {
 	}
 
 	return (
-		<div className = 'tc bg-lightest-white dib br3 pa3 ma2 bw2 shadow-3 h-25 w-40'>
+		<div className = 'tc bg-lightest-white dib br3 pa3 ma2 bw2 shadow-3 h-25 w-40 card-body'>
 			<img src={`https://robohash.org/${id}?size=200x200`} alt='profile photo' 
-				className='br-100 h4 w4 dib ba b--black-05 pa2 grow' 
+				className='br-100 h4 w4 dib ba b--black-05 pa2 grow holder' 
 			/>
 			<div>
 				<p className='f4'><b>Name: </b>{name}</p>
@@ -35,7 +35,7 @@ const Card = ({ name, dob, bloodGroup, id, contacts, lat, lng }) => {
   					lng={lng}
 				/>
 
-				<div className='card-body'>
+				<div className=''>
 					<p className='f5 tl'><b>Emergency Contacts: </b></p>
 					{
 						contacts.map((contact, i) => {

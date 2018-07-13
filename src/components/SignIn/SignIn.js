@@ -1,12 +1,14 @@
 import React from 'react';
+import Button from '@material-ui/core/Button';
+import './SignIn.css';
 
 const SignIn = ({ onRouteChange }) => {
 	return (
-		<article className="br3 ba b--black-10 mv4 w-100 w-50-m w-25-l mw6 shadow-5 center">
-			<main className="pa4 yellow">
+		<article className="br3 ba b--black-10 mv4 w-100 w-50-m w-25-l mw6 shadow-5 center card">
+			<main className="pa4 white">
 			  <div className="measure">
 			    <fieldset id="sign_up" className="ba b--transparent ph0 mh0">
-			      <legend className="f1 fw6 ph0 mh0 green">Sign In</legend>
+			      <legend className="f1 fw6 ph0 mh0 blue">Sign In</legend>
 			      <div className="mt3">
 			        <label className="db fw6 lh-copy f6" htmlFor="email-address">Email</label>
 			        <input className="pa2 input-reset ba bg-transparent hover-black w-100" 
@@ -19,15 +21,20 @@ const SignIn = ({ onRouteChange }) => {
 			      </div>
 			    </fieldset>
 			    <div className="">
-			      <input 
-				    onClick={() => onRouteChange('home')}
-				    className="b ph3 pv2 input-reset ba b--navy bg-transparent grow pointer f6 dib yellow" 
-				    type="submit" 
-				    value="Sign in"
-			      />
+			      	{/*<input 
+					    onClick={() => onRouteChange('home')}
+					    className="b ph3 pv2 input-reset ba b--navy bg-transparent grow pointer f6 dib yellow" 
+					    type="submit" 
+					    value="Sign in"
+			     	/> */}
+			      	<Button variant="contained" 
+			      		onClick={() => onRouteChange('home')}
+			      		color="primary">
+				    		Sign In
+				  	</Button>
 			    </div>
 			    <div className="lh-copy mt3">
-			      <p onClick={() => onRouteChange('signup')} className="f6 link dim black pointer db light-blue">Sign up</p>
+			      <p onClick={() => onRouteChange('signup')} className="f6 link dim black pointer db blue">Sign up</p>
 			    </div>
 			  </div>
 			</main>

@@ -1,0 +1,14 @@
+.nav-bar {
+	height: 45px;
+	/*background-color: #000f26;*/
+	background-color: #001230; 
+	padding: 15px;
+	text-align: right;
+}
+
+.nav-comp {
+	color: white;
+	display: inline;
+	padding: 10px;
+	cursor: pointer;
+}
