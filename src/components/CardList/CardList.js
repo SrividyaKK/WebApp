@@ -5,7 +5,6 @@ import './CardList.css';
 const CardList = ({ users }) => {
 	return (	
 		<div className='mt4 ml3 mr3'>
-			<h1 className='tc f1 white shadow-2 enjoy-css ttu '>Syndrive</h1>
 			{
 				users.map((user, i) => {
 					return (

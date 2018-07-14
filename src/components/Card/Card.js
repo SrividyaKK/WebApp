@@ -1,12 +1,12 @@
 import React from 'react';
 import Contacts from '../Contacts';
 import './Card.css'
-// import SimpleMap from '../SimpleMap';
 import MapWithAMarker from '../Map/Map';
+import Checkbox from '@material-ui/core/Checkbox'
 
 const Card = ({ name, dob, bloodGroup, id, contacts, lat, lng }) => {
-	const year = Number(dob.substr(4, 4));
-	const month = Number(dob.substr(2, 2)) - 1;
+	const year = Number(dob.substr(6, 4));
+	const month = Number(dob.substr(3, 2)) - 1;
 	const day = Number(dob.substr(0, 2));
 	let today = new Date();
 	let age = today.getFullYear() - year;
@@ -25,7 +25,6 @@ const Card = ({ name, dob, bloodGroup, id, contacts, lat, lng }) => {
 				<p className='f5 tl'><b>DOB: </b>{day}.{month+1}.{year} (Age: {age})</p>
 				<p className='f5 tl'><b>Blood Group: </b>{bloodGroup}</p>
 				<p className='f5 tl'></p>
-				{/*<SimpleMap />*/}
 				<MapWithAMarker
   					googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBgA7QvYJPhmHlWV5mMskI28-3S_T0VVo&v=3.exp&libraries=geometry,drawing,places"
   					loadingElement={<div style={{ height: `100%` }} />}
@@ -49,12 +48,9 @@ const Card = ({ name, dob, bloodGroup, id, contacts, lat, lng }) => {
 						})
 					}
 				</div>
-				<input 
-					className='addressbox'
-					type='checkbox'
-					name='action'
-					value='addressed'
-				/> Issue Addressed
+				<Checkbox
+				    label='Issue Addressed'
+				/>Issue Addressed
 			</div>
 		</div>
 	);

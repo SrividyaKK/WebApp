@@ -2,7 +2,7 @@ const users = [
     {
         id: 1,
         name: 'Leanne Graham',
-        dob: '01011992',
+        dob: '01/01/1992',
         bloodGroup: 'A+', 
         contacts: [
             {
@@ -24,7 +24,7 @@ const users = [
     {
         id: 2,
         name: 'Ervin Howell',
-        dob: '09051995',
+        dob: '09/05/1995',
         bloodGroup: 'O+', 
         contacts: [
             {
@@ -46,7 +46,7 @@ const users = [
     {
         id: 3,
         name: 'Clementine Bauch',
-        dob: '13101985',
+        dob: '13/10/1985',
         bloodGroup: 'B-', 
         contacts: [
             {
@@ -68,7 +68,7 @@ const users = [
     {
         id: 4,
         name: 'Patricia Lebsack',
-        dob: '16071968',
+        dob: '16/07/1968',
         bloodGroup: 'AB-', 
         contacts: [
             {

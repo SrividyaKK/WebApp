@@ -10,25 +10,25 @@ const SignUp = ({ onRouteChange }) => {
 			    <fieldset id="sign_up" className="ba b--transparent ph0 mh0">
 			      <legend className="f1 fw6 ph0 mh0 blue">Sign Up</legend>
 			      <div className="mt3">
-			        <label className="db fw6 lh-copy f6" htmlFor="name">Hospital Name</label>
-			        <input className="pa2 input-reset ba bg-transparent hover-bg-lighest-white hover-black w-100" type="text" name="name"  id="name"/>
+			        <input className="pa2 input-reset ba bg-transparent hover-bg-lighest-white hover-black w-100" 
+			        type="text" name="name"  id="name"
+			        placeholder="Hospital Name"
+			        />
 			      </div>
 			      <div className="mt3">
-			        <label className="db fw6 lh-copy f6" htmlFor="email-address">Email</label>
-			        <input className="pa2 input-reset ba bg-transparent hover-bg-lighest-white hover-black w-100" type="email" name="email-address"  id="email-address"/>
+			        <input className="pa2 input-reset ba bg-transparent hover-bg-lighest-white hover-black w-100" 
+			        type="email" name="email-address"  id="email-address"
+			        placeholder="Email"
+			        />
 			      </div>
 			      <div className="mv3">
-			        <label className="db fw6 lh-copy f6" htmlFor="password">Password</label>
-			        <input className="b pa2 input-reset ba bg-transparent hover-bg-lighest-white hover-black w-100" type="password" name="password"  id="password"/>
+			        <input className="b pa2 input-reset ba bg-transparent hover-bg-lighest-white hover-black w-100" 
+			        type="password" name="password"  id="password"
+			        placeholder="Password"
+			        />
 			      </div>
 			    </fieldset>
 			    <div className="">
-			      {/*<input 
-				    onClick={() => onRouteChange('home')}
-				    className="b ph3 pv2 input-reset ba b--navy bg-transparent grow pointer f6 dib yellow" 
-				    type="submit" 
-				    value="Sign Up"
-			      />*/}
 			      	<Button variant="contained" 
 			      		onClick={() => onRouteChange('home')}
 			      		color="primary">

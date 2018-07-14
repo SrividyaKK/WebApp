@@ -3,8 +3,9 @@ import './App.css';
 import Navigation from './components/Navigation/Navigation';
 import SignIn from './components/SignIn/SignIn';
 import SignUp from './components/SignUp/SignUp';
-import Logo from './components/Logo/Logo';
 import CardList from './components/CardList/CardList';
+import Scroll from './components/Scroll';
+import Title from './components/Title';
 import users from './components/users.js';
 import Particles from 'react-particles-js';
 
@@ -55,8 +56,10 @@ class App extends Component {
             <Navigation isSignedIn={isSignedIn} onRouteChange={this.onRouteChange} />
             { route === 'home' 
                 ? <div>
-                    {/*<Logo />*/}
-                    <CardList users={users}/>
+                    <Title />
+                    <Scroll>
+                        <CardList users={users}/>
+                    </Scroll>
                 </div>
                 : (
                     route === 'signin'
