@@ -57,9 +57,7 @@ class App extends Component {
             { route === 'home' 
                 ? <div>
                     <Title />
-                    <Scroll>
-                        <CardList users={users}/>
-                    </Scroll>
+                    <CardList users={users}/>
                 </div>
                 : (
                     route === 'signin'

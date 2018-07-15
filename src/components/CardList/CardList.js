@@ -4,7 +4,7 @@ import './CardList.css';
 
 const CardList = ({ users }) => {
 	return (	
-		<div className='mt4 ml3 mr3'>
+		<div className='card-list'>
 			{
 				users.map((user, i) => {
 					return (

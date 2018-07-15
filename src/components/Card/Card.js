@@ -15,7 +15,7 @@ const Card = ({ name, dob, bloodGroup, id, contacts, lat, lng }) => {
 	}
 
 	return (
-		<div className = 'tc bg-lightest-white dib br3 pa3 ma2 bw2 shadow-3 h-25 w-40 card-body'>
+		<div className = 'tc bg-lightest-white dib br3 pa3 ma2 bw2 shadow-3 card-body'>
 			<img src={`https://robohash.org/${id}?size=200x200`} alt='profile photo' 
 				className='br-100 h4 w4 dib ba b--black-05 pa2 grow holder' 
 			/>
@@ -28,7 +28,7 @@ const Card = ({ name, dob, bloodGroup, id, contacts, lat, lng }) => {
 				<MapWithAMarker
   					googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBgA7QvYJPhmHlWV5mMskI28-3S_T0VVo&v=3.exp&libraries=geometry,drawing,places"
   					loadingElement={<div style={{ height: `100%` }} />}
-  					containerElement={<div style={{ height: `400px` }} />}
+  					containerElement={<div style={{ height: `400px`, width: `400px` }} />}
   					mapElement={<div style={{ height: `100%` }} />}
   					lat={lat}
   					lng={lng}
