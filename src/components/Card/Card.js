@@ -4,7 +4,7 @@ import './Card.css'
 import MapWithAMarker from '../Map/Map';
 import Checkbox from '@material-ui/core/Checkbox'
 
-const Card = ({ name, dob, bloodGroup, id, contacts, lat, lng }) => {
+const Card = ({ name, dob, bloodGroup, id, contacts, lat, lng, isChecked }) => {
 	const year = Number(dob.substr(6, 4));
 	const month = Number(dob.substr(3, 2)) - 1;
 	const day = Number(dob.substr(0, 2));
@@ -14,8 +14,10 @@ const Card = ({ name, dob, bloodGroup, id, contacts, lat, lng }) => {
 		age--;
 	}
 
+	//const cardBody = (isChecked) ? 'card-checked' : 'card-unchecked';
+
 	return (
-		<div className = 'tc bg-lightest-white dib br3 pa3 ma2 bw2 shadow-3 card-body'>
+		<div className = 'tc bg-lightest-white dib br3 pa3 ma2 bw2 shadow-3 card-unchecked'>
 			<img src={`https://robohash.org/${id}?size=200x200`} alt='profile photo' 
 				className='br-100 h4 w4 dib ba b--black-05 pa2 grow holder' 
 			/>
@@ -50,6 +52,7 @@ const Card = ({ name, dob, bloodGroup, id, contacts, lat, lng }) => {
 				</div>
 				<Checkbox
 				    label='Issue Addressed'
+				    onCheck={isChecked=true}
 				/>Issue Addressed
 			</div>
 		</div>

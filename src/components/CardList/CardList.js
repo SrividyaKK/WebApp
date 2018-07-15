@@ -17,6 +17,7 @@ const CardList = ({ users }) => {
 							lng={users[i].location.lng}
 							// photo={'http://i0.wp.com/www.coldashpreschool.org.uk/wp-content/uploads/2017/01/Blank-Profile-Pic.jpg'}
 							contacts={users[i].contacts}
+							isChecked={false}
 						/>
 					);
 				})
