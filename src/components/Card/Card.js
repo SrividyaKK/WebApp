@@ -24,31 +24,32 @@ const Card = ({ name, dob, bloodGroup, id, contacts, lat, lng, isChecked }) => {
 			<div>
 				<p className='f4'><b>Name: </b>{name}</p>
 				<hr class="mw3 bb bw1 b--black-10" />
-				<p className='f5 tl'><b>DOB: </b>{day}.{month+1}.{year} (Age: {age})</p>
-				<p className='f5 tl'><b>Blood Group: </b>{bloodGroup}</p>
 				<p className='f5 tl'></p>
 				<MapWithAMarker
   					googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBgA7QvYJPhmHlWV5mMskI28-3S_T0VVo&v=3.exp&libraries=geometry,drawing,places"
   					loadingElement={<div style={{ height: `100%` }} />}
-  					containerElement={<div style={{ height: `400px`, width: `400px` }} />}
+  					containerElement={<div style={{ height: `300px`, width: `300px` }} />}
   					mapElement={<div style={{ height: `100%` }} />}
   					lat={lat}
   					lng={lng}
 				/>
+				<p className='f5 tl'><b>DOB: </b>{day}.{month+1}.{year} (Age: {age})</p>
+				<p className='f5 tl'><b>Blood Group: </b>{bloodGroup}</p>
 
-				<div className=''>
+				<div className='row'>
 					<p className='f5 tl'><b>Emergency Contacts: </b></p>
+					<div className='col-xs-3'>
 					{
 						contacts.map((contact, i) => {
 							return (
 								<Contacts key={i}
 									name={contacts[i].name} 
 									number={contacts[i].number}
-									relation={contacts[i].relation}
 								/>
 							);
 						})
 					}
+					</div>
 				</div>
 				<Checkbox
 				    label='Issue Addressed'

@@ -1,12 +1,11 @@
 import React from 'react';
 
-const Contacts = ({ name, number, key, relation }) => {
+const Contacts = ({ name, number, key }) => {
 	return (
 		<div className='tl'>
 			<ul>
 				<li><b>Name: </b>{name}</li>
 				<li><b>Ph: </b>{number}</li>
-				<li><b>Relation: </b>{relation}</li>
 			</ul>
 		</div>
 	);

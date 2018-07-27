@@ -4,7 +4,7 @@ import Navigation from './components/Navigation/Navigation';
 import SignIn from './components/SignIn/SignIn';
 import SignUp from './components/SignUp/SignUp';
 import CardList from './components/CardList/CardList';
-import Scroll from './components/Scroll';
+// import Scroll from './components/Scroll';
 import Title from './components/Title';
 import users from './components/users.js';
 import Particles from 'react-particles-js';
@@ -31,13 +31,18 @@ class App extends Component {
             input: '',
             route: 'signin',
             isSignedIn: false, 
-            users: users
+            users: users, 
+            isChecked: false
         }
     }
 
     onInputChange = (event) => {
         this.setState({input: event.target.value});
     }
+
+    // onChecked = () => {
+
+    // }
 
     onRouteChange = (route) => {
         if (route === 'signout') this.setState({isSignedIn: false})
@@ -47,6 +52,8 @@ class App extends Component {
   
     render() {
         const { isSignedIn, route, users } = this.state;
+        // const filteredUsers = users;
+
         return (
           <div className="App">
             <Particles className='particles'
